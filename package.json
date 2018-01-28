@@ -9,6 +9,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "github:gulpjs/gulp#4.0"
+    "browser-sync": "^2.23.6",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8"
   }
 }

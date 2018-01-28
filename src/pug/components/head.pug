@@ -1,0 +1,30 @@
+meta(charset="UTF-8")
+title= page.title
+
+meta(http-equiv="X-UA-Compatible", content="IE=edge")
+meta(name="viewport", content="width=device-width, initial-scale=1")
+meta(name="description", content= page.description)
+
+
+// Android
+meta(name="mobile-web-app-capable", content="yes")
+meta(name="theme-color", content="#f6cf48")
+link(type="image/png", href="/img/touch/android-chrome-192x192.png", rel="icon", sizes="192x192")
+
+// iOS
+meta(name="apple-mobile-web-app-capable", content="yes")
+meta(name="apple-mobile-web-app-status-bar-style", content="black")
+meta(name="apple-mobile-web-app-title", content= page.appTitle)
+link(href="img/touch/apple-touch-icon.png", rel="apple-touch-icon")
+link(href="img/touch/circuit.svg", rel="mask-icon", color="#e8e8e8")
+
+// Windows 8 Tile
+meta(name="msapplication-TileColor", content="#f6cf48")
+meta(name="msapplication-TileImage", content="img/touch/mstile-144x144.png")
+
+// Standard
+link(type="image/png", href="img/touch/favicon-32x32.png", rel="icon", sizes="32x32")
+
+// Styles
+link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&amp;subset=cyrillic", rel="stylesheet")
+link(href="main.css", rel="stylesheet")
