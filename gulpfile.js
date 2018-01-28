@@ -49,19 +49,23 @@ gulp.task('scss', function () {
     }));
 });
 
-
-
+/* Copy Images */
+gulp.task('copy:img', function(){
+  return gulp.src('src/img/**/*.*')
+    .pipe(gulp.dest('build/img'));
+});
 
 
 /* WATCH */
 gulp.task('watch', function () {
+  gulp.watch('src/img/**/*.*', gulp.series('copy:img'));
   gulp.watch('src/pug/**/*.pug', gulp.series('pug'));
   gulp.watch('src/scss/**/*.scss', gulp.series('scss'));
-})
+});
 
 /* DEFAULT */
 gulp.task('default', gulp.series(
-  gulp.parallel('pug', 'scss'),
+  gulp.parallel('pug', 'scss', 'copy:img'),
   gulp.parallel('watch', 'server')
 
 ));
